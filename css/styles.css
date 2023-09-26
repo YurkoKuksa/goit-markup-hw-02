@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto",
         sans-serif;
-        color: var(--SLATE, #434455);
+        color: var(--body-color);
     background-color: #FFF;
 }
 
@@ -14,15 +14,34 @@ body {
 /*     line-height: 1.15;                         */
 /* ============================================== */
 
+/* --------------------- VAR  ------------------------   */
+:root {
+    --hover-color: #404BBF;
+    --title-color: #2E2F42;
+    --body-color: #434455;
+    --logo-color: #4D5AE5;
+    --maintitle-color: #FFF;
+    --section-color: #F4F4FD;
+}
+
+/*  -------------------  /var  -----------------------   */
+
 .links {
     list-style-type: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
 
 /* ==================  HEADER =======================*/
 
 .header-link-logo {
-    color: var(--IRIS, #4D5AE5);
+    color: var(--logo-color);
     font-family: "Raleway",
         sans-serif;
     font-size: 18px;
@@ -30,15 +49,15 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .span-logo {
-    color: var(--NAVY-BLUE, #2E2F42);
+    color: var(--title-color);
     }
 
 .header-link-menu {
-    color: var(--NAVY-BLUE, #2E2F42);
+    color: var(--title-color);
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -46,7 +65,7 @@ body {
 }
 
 .header-link-address {
-    color: var(--SLATE, #434455);
+    color: var(--body-color);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -57,13 +76,6 @@ body {
     font-style: normal;
 }
 /* =================== /header =====================*/
-
-/* --------------------- VAR  ------------------------   */
-:root {
-    --hover-color: #404BBF;
-}
-
-/*  -------------------  /var  -----------------------   */
 
 /*  ----------------  Normalization -------------------- */
 .header-link-menu:hover,
@@ -87,11 +99,11 @@ body {
 
 /* Section 1 */
 .section-one {
-     background: var(--NAVY-BLUE, #2E2F42);
+     background: var(--title-color);
 }
 
 .main-title {
-    color: var(--WHITE, #FFF);
+    color: var(--maintitle-color);
     text-align: center;
 
     font-size: 56px;
@@ -101,9 +113,9 @@ body {
 }
 
 .button-order-service {
-     background: var(--IRIS, #4D5AE5);
+     background: var(--logo-color);
     
-     color: var(--WHITE, #FFF);
+     color: var(--maintitle-color);
      font-weight: 500;
      line-height: 1.5;
      letter-spacing: 0.04em;
@@ -113,7 +125,7 @@ body {
 /* Section 2 */
 
 .dscr-titles {
-    color: var(--NAVY-BLUE, #2E2F42);
+    color: var(--title-color);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -121,7 +133,7 @@ body {
 }
 
 .description {
-    color: var(--SLATE, #434455);
+    color: var(--body-color);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em
@@ -130,7 +142,7 @@ body {
 /* Section 3 */
 
 .section-title {
-    color: var(--NAVY-BLUE, #2E2F42);
+    color: var(--title-color);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -140,15 +152,15 @@ body {
 
 /* Section 4 */
 .section-four {
-    background: var(--CLOUD, #F4F4FD);
+    background: var(--section-color);
 }
     
 .section-four-list {
-    background: var(--WHITE, #FFF);
+    background: var(--maintitle-color);
 }
 
 .section-four-list-title {
-color: var(--NAVY-BLUE, #2E2F42);
+color: var(--title-color);
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -168,16 +180,16 @@ color: var(--NAVY-BLUE, #2E2F42);
 
 /* Footer */
 .footer {
-    background: var(--NAVY-BLUE, #2E2F42);
+    background: var(--title-color);
 }
 
 
 .span-logo-footer {
-    color: var(--CLOUD, #F4F4FD);
+    color: var(--section-color);
    }
 
 .footer-paragraph {
-    color: var(--CLOUD, #F4F4FD);
+    color: var(--section-color);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -196,7 +208,7 @@ color: var(--NAVY-BLUE, #2E2F42);
 
 
 .button-portfolio {
-    color: var(--IRIS, #4D5AE5);
+    color: var(--logo-color);
     text-align: center;
     font-family: "Roboto",
             sans-serif;
@@ -204,7 +216,7 @@ color: var(--NAVY-BLUE, #2E2F42);
     line-height: 1.5;
     letter-spacing: 0.04em;
 
-    background: var(--CLOUD, #F4F4FD);
+    background: var(--section-color);
     cursor: pointer;
 
 
@@ -213,10 +225,10 @@ color: var(--NAVY-BLUE, #2E2F42);
 
 .button-portfolio:focus,
 .button-portfolio:hover {
-    color: var(--WHITE, #FFF);
+    color: var(--maintitle-color);
        font-family: "Roboto",
         sans-serif;
-    background: var(--OCEAN, #404BBF);
+    background: var(--hover-color);
     
 
 }
